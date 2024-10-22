@@ -1,0 +1,94 @@
+/* Full-page blue background */
+.big-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e6f2ff; /* Light blue background */
+    padding: 20px;
+  }
+  
+  /* Login box resembling Amazon's design */
+  .login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Login form heading (H2) */
+  .login-box h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Subtle text for "Please log in to continue" */
+  .sub-heading {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Form input fields styled similar to Amazon */
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #ffa41b; /* Amazon-style orange border */
+    box-shadow: 0 0 5px rgba(255, 164, 27, 0.5); /* Light orange shadow */
+  }
+  
+  /* Login button styled like Amazon's */
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #ffa41b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #ff5252;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* "Don't have an account?" prompt */
+  .signup-prompt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signup-link {
+    color: #0066c0; /* Amazon's link blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  

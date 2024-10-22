@@ -1,0 +1,197 @@
+/* Main container for the dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #e6f2ff; /* Light blue background */
+  font-family: 'Arial', sans-serif; /* Cleaner font */
+}
+
+/* Header container for logo and menu */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+  background-color: #4caf50; /* Green header */
+  color: white; /* White text for contrast */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo container on the left */
+.logo-container {
+  flex: 1; /* Allow space for alignment */
+}
+
+/* Logo styling */
+.logo {
+  height: 50px;
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Menu container on the right */
+.menu-container {
+  position: relative; /* For dropdown positioning */
+}
+
+/* Hamburger button styling */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white; /* White color for contrast */
+  transition: transform 0.3s; /* Smooth animation */
+}
+
+.hamburger:hover {
+  transform: rotate(90deg); /* Rotate on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Spaced below hamburger */
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth appearance */
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Menu items */
+.menu-item {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 500; /* Slightly bolder text */
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Logout button with hover effect */
+.logout-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #ffe6e6; /* Light red hover effect */
+}
+
+/* Welcome section */
+.welcome-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Summary cards section */
+.summary-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #4caf50;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Recent activity section */
+.recent-activity {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-activity li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555;
+}
+
+.recent-activity li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto; /* Push to the bottom */
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 0.9rem;
+}
