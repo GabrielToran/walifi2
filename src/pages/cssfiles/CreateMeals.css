@@ -1,0 +1,34 @@
+.meal-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .meal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .meal-item {
+    width: 220px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .meal-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .scheduled-meals {
+    margin-top: 20px;
+  }
+  
+  .scheduled-meals ul {
+    list-style: none;
+    padding: 0;
+  }
+  

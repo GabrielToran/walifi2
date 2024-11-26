@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import { auth } from '../firebaseConfig';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import { useNavigate, Link  } from 'react-router-dom';
+import './cssfiles/Login.css'; // Reuse the same CSS as Login form
+
+
 const SignUp = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -23,14 +25,48 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSignUp}>
-        <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-        <button type="submit">Sign Up</button>
-        {error && <p>{error}</p>}
+    <div className="login-container">
+      <form className="login-form" onSubmit={handleSignUp}>
+        <h2 className="login-title">Create an Account</h2>
+        <p className="login-subtitle">Sign up to get started</p>
+
+        <div className="input-group">
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="input-group">
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="input-group">
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+
+        {error && <p className="error-message">{error}</p>}
+
+        <button type="submit" className="login-button">Sign Up</button>
+
+        <p className="signup-text">
+          Already have an account? <Link to="/login">Log in</Link>
+        </p>
       </form>
     </div>
   );

@@ -1,0 +1,89 @@
+/* CustomCalendar.css */
+
+/* Main Calendar Container */
+.react-calendar {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation Buttons */
+  .react-calendar__navigation button {
+    color: #4a90e2;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation button:hover {
+    color: #1a73e8;
+  }
+  
+  /* Month and Year Title */
+  .react-calendar__navigation__label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Weekdays Header */
+  .react-calendar__month-view__weekdays {
+    font-size: 16px;
+    color: #666;
+    text-transform: uppercase;
+  }
+  
+  /* Days */
+  .react-calendar__tile {
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    background: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-calendar__tile--now {
+    background-color: #ffeb3b;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .react-calendar__tile--active:hover,
+  .react-calendar__tile--now:hover {
+    background-color: #1a73e8;
+    color: #fff;
+  }
+  
+  /* Disabled Days */
+  .react-calendar__tile--disabled {
+    color: #ccc;
+  }
+  
+  /* Hover and Focus */
+  .react-calendar__tile:hover {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  
+  /* Calendar Footer */
+  .react-calendar__month-view__days__day--weekend {
+    color: #d32f2f;
+  }
+  
+  /* Custom Today Highlight */
+  .react-calendar__tile--now {
+    background-color: #ffeb3b;
+    color: #333;
+    font-weight: bold;
+  }
+  

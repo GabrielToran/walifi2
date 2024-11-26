@@ -1,0 +1,125 @@
+/* CreateTasks.css */
+.create-tasks-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-task-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .tasks-list {
+    margin-top: 20px;
+  }
+  
+  .sub-title {
+    margin-bottom: 10px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-name {
+    flex: 1;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    color: #999;
+  }
+  
+  .back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #5a6268;
+  }
+  .task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  

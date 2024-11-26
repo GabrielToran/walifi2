@@ -11,6 +11,7 @@ import CreateTasks from './pages/CreateTasks';
 import CreateMeals from './pages/CreateMeals'; 
 import CreateExercise from './pages/CreateExercise';
 import CreateStudySchedule from './pages/CreateStudySchedule';
+
 function App() {
   const [user, setUser] = React.useState(null);
 
@@ -32,6 +33,8 @@ function App() {
       <Routes>
         <Route path="/" element={user ? <Navigate to="/dashboard" /> : <Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+
         <Route
           path="/dashboard"
           element={user ? <Dashboard handleLogout={handleLogout} /> : <Navigate to="/" />}
@@ -40,6 +43,7 @@ function App() {
         <Route path="/create-meals" element={<CreateMeals />} />
         <Route path="/create-exercises" element={<CreateExercise />} />
         <Route path="/create-study-schedule" element={<CreateStudySchedule />} />
+       
       </Routes>
     </Router>
   );
